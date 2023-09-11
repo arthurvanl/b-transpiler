@@ -220,8 +220,3 @@ export class BTranspiler {
         return stats;
     }
 }
-
-const transpiler = new BTranspiler();
-
-transpiler.setOutdir('dist').addFolder('aaa', ['test.ts'], [{name: 'bbb', exclude: ['titest.ts'], folders: [{name: 'ccc', exclude: ['ccitest.ts']}]}]).transform();
-// console.log(transpiler)
